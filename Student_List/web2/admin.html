@@ -1,0 +1,112 @@
+
+<!-- HTML code to display data in tabular format -->
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+ 
+<header>
+    <div class="header-title">
+        <h1>
+            Admin Panel
+        </h1>
+    </div>
+</header>
+<body>
+    <section>
+        <div class="main-box">
+            <div class="form-input">
+                <div class="person-input-box">
+                    <div class="person-input">
+                        <form id="person-form" class="person-form" action="insertPerson.php" method="POST">
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Fname" id="Ext_P_Fname" placeholder="First name" maxlength="15" required>
+                                <label for="Ext_P_Fname" class="form__label">First name</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Lname" id="Ext_P_Lname" placeholder="Last name" maxlength="15" required>
+                                <label for="Ext_P_Lname" class="form__label">Last name</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Age" id="Ext_P_Age" placeholder="Age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                                <label for="Ext_P_Age" class="form__label">Age</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Group_number" id="Ext_P_Group_number" placeholder="Group" maxlength="5" required>
+                                <label for="Ext_P_Group_number" class="form__label">Group</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Teacher_Fname" id="Ext_P_Teacher_Fname" placeholder="Teacher's First name" maxlength="15" required>
+                                <label for="Ext_P_Teacher_Fname" class="form__label">Teacher's First name</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_Teacher_Lname" id="Ext_P_Teacher_Lname" placeholder="Teacher's Last name" maxlength="15" required>
+                                <label for="Ext_P_Teacher_Lname" class="form__label">Teacher's Last name</label>
+                            </div>
+                            <div class="form__group field">
+                                <label for="level" class="form__label">Level</label>
+                                <select class="form__field" name="Ext_P_Level" id="Ext_P_Level">
+                                    <option value="Bachelor">Bachelor</option>
+                                    <option value="Master">Master</option>
+                                    <option value="Doctor">Doctor</option>
+                                </select>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_P_T_ID" id="Ext_P_T_ID" placeholder="Thesis" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                                <label for="Ext_P_T_ID" class="form__label">Thesis</label>
+                            </div>
+                            <button type="submit" class="custom-btn sub" style="margin-top: 20px; margin-bottom: 20px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="thesis-input-box">
+                    <div class="thesis-input">
+                        <form id="thesis-form" class="thesis-form" action="insertThesis.php" method="POST">
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_T_Title" id="Ext_T_Title" placeholder="Title" maxlength="30" required>
+                                <label for="Ext_T_Title" class="form__label">Title</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_T_Abstract" id="Ext_T_Abstract" placeholder="Abstract" required>
+                                <label for="Ext_T_Abstract" class="form__label">Abstract</label>
+                            </div>
+                            <div class="form__group field">
+                                <input type="text" class="form__field" name="Ext_T_Year" id="Ext_T_Year" placeholder="Year" maxlength="2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                                <label for="Ext_T_Year" class="form__label">Year of study</label>
+                            </div>
+                            <button type="submit" class="custom-btn sub" style="margin-top: 20px; margin-bottom: 20px;">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="transfer-box">
+                <form id="transfer-form" class="transfer-form" action="transferData.php" method="POST">
+                    <button type="button" class="custom-btn sub" style="margin-bottom: 20px; margin-left: 190px;">Transfer Data</button>
+                </form>
+            </div>
+        </div>
+        
+        
+    </section>
+    <footer>
+    <div class="footer-title">
+        <div class="footer-text">
+            <p>
+                <a href="/web1/public.html">Back to public page</a>   
+            </p>
+        </div>
+    </div>
+    </footer>          
+    <script src="admin.js"></script>
+</body>
+ 
+</html>
