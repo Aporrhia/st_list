@@ -27,7 +27,7 @@
             <div class="search-box">
                 <div class="input-box">
                     <div class="form__group field">
-                        <input type="text" class="form__field" name="name" id="name" placeholder="Name" maxlength="15">
+                        <input type="text" class="form__field" name="name" id="name" placeholder="Name" maxlength="15" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')">
                         <label for="name" class="form__label">Name</label>
                     </div>
                 </div>
