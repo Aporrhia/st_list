@@ -29,11 +29,11 @@
                     <div class="person-input">
                         <form id="person-form" class="person-form" action="insertPerson.php" method="POST">
                             <div class="form__group field">
-                                <input type="text" class="form__field" name="Ext_P_Fname" id="Ext_P_Fname" placeholder="First name" maxlength="15" required>
+                                <input type="text" class="form__field" name="Ext_P_Fname" id="Ext_P_Fname" placeholder="First name" maxlength="15" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" required>
                                 <label for="Ext_P_Fname" class="form__label">First name</label>
                             </div>
                             <div class="form__group field">
-                                <input type="text" class="form__field" name="Ext_P_Lname" id="Ext_P_Lname" placeholder="Last name" maxlength="15" required>
+                                <input type="text" class="form__field" name="Ext_P_Lname" id="Ext_P_Lname" placeholder="Last name" maxlength="15" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" required>
                                 <label for="Ext_P_Lname" class="form__label">Last name</label>
                             </div>
                             <div class="form__group field">
@@ -45,11 +45,11 @@
                                 <label for="Ext_P_Group_number" class="form__label">Group</label>
                             </div>
                             <div class="form__group field">
-                                <input type="text" class="form__field" name="Ext_P_Teacher_Fname" id="Ext_P_Teacher_Fname" placeholder="Teacher's First name" maxlength="15" required>
+                                <input type="text" class="form__field" name="Ext_P_Teacher_Fname" id="Ext_P_Teacher_Fname" placeholder="Teacher's First name" maxlength="15" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" required>
                                 <label for="Ext_P_Teacher_Fname" class="form__label">Teacher's First name</label>
                             </div>
                             <div class="form__group field">
-                                <input type="text" class="form__field" name="Ext_P_Teacher_Lname" id="Ext_P_Teacher_Lname" placeholder="Teacher's Last name" maxlength="15" required>
+                                <input type="text" class="form__field" name="Ext_P_Teacher_Lname" id="Ext_P_Teacher_Lname" placeholder="Teacher's Last name" maxlength="15" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" required>
                                 <label for="Ext_P_Teacher_Lname" class="form__label">Teacher's Last name</label>
                             </div>
                             <div class="form__group field">
