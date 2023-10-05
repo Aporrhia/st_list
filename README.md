@@ -28,7 +28,7 @@ St. list based on the given task.
 
 On the main page (`public.html`) it is possible to filter data and search persons by their first name or last name.
 
-On the admin page (`admin.html`) it is possible to add new entries to the database. As well as transfer data from `web1db` to `web2db`.
+On the admin page (`admin.html`) it is possible to add new entries to the database. As well as transfer data from `web2db` to `web1db`.
 
 And by going back to the main page data will be automatically updated.
 
